@@ -1,0 +1,173 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+h1{
+    font-size: 2.6rem;
+}
+h2{
+    font-size: 4.8rem;
+}
+h3{
+    font-size: 3rem;
+    font-width: normal;
+}
+h4,h5{
+    font-size: 2.8rem;
+}
+li {
+    font-size: 2rem;
+}
+a{
+   color: white;
+    text-decoration: none;
+}
+body{
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+
+/*header*/
+
+.main-head{
+    background: cornflowerblue;
+     color: white;
+}
+nav{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding:2rem ;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+#logo{
+    flex: 1 1 40rem;
+    font-family: 'Otomanopee One', sans-serif;
+    font-family: 'Tourney', cursive;
+    font-weight: normal;
+}
+/*hero*/
+.hero{
+    min-height: 90vh;
+    background:linear-gradient(rgb(0, 0, 0.5),transparent),url("images/tsinimoipanga.jpg");
+    background-size: cover;
+    background-position:bottom;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h3{
+    padding: 4rem;
+}
+button{
+    padding: 2rem 6rem;
+    background: cornflowerblue;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: none;
+
+}
+@media screen and (max-width: 885px){
+    html{
+        font-size: 45%;
+    }
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
+}
+/*Pied de pages */
+#footer {
+    background: url("images/footer-bg.jpg") top center no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+#footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#footer .container {
+    position: relative;
+    min-height: 10vh;
+}
+
+#footer h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    font-family: "Satisfy", serif;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+#footer p {
+    font-size: 20px;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+    margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #ffb727;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+    background: #f3a200;
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .copyright {
+    margin: 0 0 5px 0;
+}
+
+#footer .credits {
+    font-size: 13px;
+}
